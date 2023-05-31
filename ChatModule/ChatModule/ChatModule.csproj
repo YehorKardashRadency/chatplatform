@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.4" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+        <PackageReference Include="Orleans.Streams.Kafka.V7" Version="7.1.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+        <PackageReference Include="Microsoft.Orleans.Core" Version="7.1.2" />
+        <PackageReference Include="Microsoft.Orleans.Streaming" Version="7.1.2" />
+        <PackageReference Include="Microsoft.Orleans.Runtime" Version="7.1.2" />
+        <PackageReference Include="Microsoft.Orleans.Server" Version="7.1.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\FacebookChat\FacebookChat.csproj" />
+      <ProjectReference Include="..\GoogleChat\GoogleChat.csproj" />
+      <ProjectReference Include="..\WhatsAppChat\WhatsAppChat.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Controllers\" />
+    </ItemGroup>
+
+</Project>
