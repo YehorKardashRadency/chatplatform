@@ -4,6 +4,7 @@
         <TargetFramework>net7.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>ChatModule</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -18,9 +19,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\FacebookChat\FacebookChat.csproj" />
-      <ProjectReference Include="..\GoogleChat\GoogleChat.csproj" />
-      <ProjectReference Include="..\WhatsAppChat\WhatsAppChat.csproj" />
+      <ProjectReference Include="..\Chats\FacebookChat\FacebookChat.csproj" />
+      <ProjectReference Include="..\Chats\GoogleChat\GoogleChat.csproj" />
+      <ProjectReference Include="..\Chats\WhatsAppChat\WhatsAppChat.csproj" />
     </ItemGroup>
 
     <ItemGroup>

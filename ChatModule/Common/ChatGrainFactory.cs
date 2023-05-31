@@ -3,13 +3,13 @@ using Orleans.Streams;
 
 namespace Common;
 
-public class ChatFactory
+public class ChatGrainFactory
 {
     private readonly IClusterClient _clusterClient;
-    private ILogger<ChatFactory> _logger;
+    private ILogger<ChatGrainFactory> _logger;
     private string? _chatId;
 
-    public ChatFactory(IClusterClient clusterClient, ILogger<ChatFactory> logger)
+    public ChatGrainFactory(IClusterClient clusterClient, ILogger<ChatGrainFactory> logger)
     {
         _clusterClient = clusterClient;
         _logger = logger;
