@@ -1,18 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatModule", "ChatModule\ChatModule.csproj", "{3419EC69-6A01-4CDA-A3A6-7473C76278EB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{3419EC69-6A01-4CDA-A3A6-7473C76278EB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{8445ECC3-0B0B-4CE9-9E0B-7221CD7997B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookChat", "FacebookChat\FacebookChat.csproj", "{FF8999C9-D1F3-45FA-BEDD-F27801725456}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookChat", "Chats\FacebookChat\FacebookChat.csproj", "{FF8999C9-D1F3-45FA-BEDD-F27801725456}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleChat", "GoogleChat\GoogleChat.csproj", "{862D4ED9-F31A-4BBE-8D74-66C3C3D77A27}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleChat", "Chats\GoogleChat\GoogleChat.csproj", "{862D4ED9-F31A-4BBE-8D74-66C3C3D77A27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMPPChat", "XMPPChat\XMPPChat.csproj", "{6905AD4B-844B-4EBA-8298-4214827AF7EA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMPPChat", "Chats\XMPPChat\XMPPChat.csproj", "{6905AD4B-844B-4EBA-8298-4214827AF7EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsAppChat", "WhatsAppChat\WhatsAppChat.csproj", "{A6388A96-3A53-43A0-B214-D2D7C5A08852}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlatformSender", "PlatformSender\PlatformSender.csproj", "{B342547D-41D9-4BDF-BBA8-5F63C9E1B7C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsAppChat", "Chats\WhatsAppChat\WhatsAppChat.csproj", "{A6388A96-3A53-43A0-B214-D2D7C5A08852}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chats", "Chats", "{A504373F-3963-4CBB-B70B-D43DFFC74367}"
 EndProject
@@ -46,10 +44,6 @@ Global
 		{A6388A96-3A53-43A0-B214-D2D7C5A08852}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6388A96-3A53-43A0-B214-D2D7C5A08852}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6388A96-3A53-43A0-B214-D2D7C5A08852}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B342547D-41D9-4BDF-BBA8-5F63C9E1B7C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B342547D-41D9-4BDF-BBA8-5F63C9E1B7C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B342547D-41D9-4BDF-BBA8-5F63C9E1B7C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B342547D-41D9-4BDF-BBA8-5F63C9E1B7C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FF8999C9-D1F3-45FA-BEDD-F27801725456} = {A504373F-3963-4CBB-B70B-D43DFFC74367}

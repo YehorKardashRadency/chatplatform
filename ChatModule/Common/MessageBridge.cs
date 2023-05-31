@@ -2,11 +2,11 @@ namespace Common;
 
 public class MessageBridge
 {
-    private readonly ChatFactory _chatFactory;
+    private readonly ChatGrainFactory _chatGrainFactory;
     private readonly ChatClientProvider _chatClientProvider;
-    public MessageBridge(ChatFactory chatFactory, ChatClientProvider chatClientProvider)
+    public MessageBridge(ChatGrainFactory chatGrainFactory, ChatClientProvider chatClientProvider)
     {
-        _chatFactory = chatFactory;
+        _chatGrainFactory = chatGrainFactory;
         _chatClientProvider = chatClientProvider;
     }
     // public async Task Receive(ChatType chatType, IApiMessage message)
@@ -14,8 +14,8 @@ public class MessageBridge
     {
         // var client = _chatClientProvider.Get(message.ChatType);
         // var platformMessage = client.ToPlatformMessage(message);
-        await _chatFactory.SetChat(message.ChatId, message.ChatType);
-        var stream = await _chatFactory.GetSendingStream();
+        await _chatGrainFactory.SetChat(message.ChatId, message.ChatType);
+        var stream = await _chatGrainFactory.GetSendingStream();
         await stream.OnNextAsync(message);
     }
 

@@ -1,6 +1,6 @@
 using Common;
 
-namespace ChatModule;
+namespace Server;
 
 public static class Configuration
 {

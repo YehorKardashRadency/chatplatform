@@ -1,5 +1,5 @@
 using System.Net;
-using ChatModule;
+using Server;
 using FacebookChat;
 
 var builder = WebApplication.CreateBuilder(args);
