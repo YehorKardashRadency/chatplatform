@@ -9,11 +9,8 @@ public class MessageBridge
         _chatGrainFactory = chatGrainFactory;
         _chatClientProvider = chatClientProvider;
     }
-    // public async Task Receive(ChatType chatType, IApiMessage message)
     public async Task Receive(PlatformMessageResponse message)
     {
-        // var client = _chatClientProvider.Get(message.ChatType);
-        // var platformMessage = client.ToPlatformMessage(message);
         await _chatGrainFactory.SetChat(message.ChatId, message.ChatType);
         var stream = await _chatGrainFactory.GetSendingStream();
         await stream.OnNextAsync(message);
